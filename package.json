@@ -1,0 +1,28 @@
+{
+  "name": "lumera-docs",
+  "version": "1.0.0",
+  "description": "Centralized documentation hub for the Lumera ecosystem",
+  "type": "module",
+  "scripts": {
+    "dev": "chappe serve",
+    "build": "chappe build",
+    "preview": "npx serve dist",
+    "sync": "bash scripts/sync-all.sh"
+  },
+  "keywords": [
+    "documentation",
+    "chappe",
+    "static-site",
+    "lumera",
+    "api-docs"
+  ],
+  "author": "Sangia Publishing House",
+  "license": "MIT",
+  "devDependencies": {
+    "chappe": "^1.0.0",
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
