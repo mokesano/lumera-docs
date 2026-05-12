@@ -6,10 +6,43 @@ node_modules/
 .env
 .env.local
 .env.*
-# Logs and temp files
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.julia/
+zig*/
+julia-*/
+
+# Build artifacts
+dist/
+build/
+target/
+*.pyc
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+
+# Logs and temporary files
 *.log
 *.tmp
 *.swp
+*.swo
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
 # Editors
 .vscode/
 .idea/
