@@ -12,7 +12,7 @@ REPOS=(
     "wizdam-apis"
     "wizdam-sikola"
     "sdgs-mapper"
-    "SDGs-analytics"
+    "sdgs-analytics"
     "lumera-edge"
 )
 
@@ -24,7 +24,7 @@ for repo in "${REPOS[@]}"; do
     
     # Determine the target directory based on repo type
     case $repo in
-        wizdam-apis|SDGs-analytics)
+        wizdam-apis|sdgs-analytics)
             TARGET_DIR="$DOC_BASE/references/$repo"
             ;;
         wizdam-sikola|sdgs-mapper|lumera-edge)
