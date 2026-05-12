@@ -1,4 +1,7 @@
-```
+# Lumera Documentation
+
+# Dependencies
+node_modules/
 # Environment
 .env
 .env.local
@@ -44,9 +47,36 @@ htmlcov/
 .vscode/
 .idea/
 
-# OS specific
-.DS_Store
-Thumbs.db
+# Build artifacts
+dist/
+build/
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
+*.sublime-workspace
+.hypothesis/
+.coverage*
+.pytest_cache/
+.mypy_cache/
 
 # Compressed files
 *.zip
@@ -71,4 +101,7 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-```
+
+# System files
+.DS_Store
+Thumbs.db
