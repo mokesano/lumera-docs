@@ -1,4 +1,5 @@
-```
+# Lumera Documentation
+
 # Dependencies
 node_modules/
 
@@ -73,4 +74,3 @@ coverage.xml
 # System files
 .DS_Store
 Thumbs.db
-```
