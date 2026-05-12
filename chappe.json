@@ -1,0 +1,26 @@
+{
+  "name": "Lumera Documentation",
+  "description": "Unified technical documentation for the Lumera ecosystem",
+  "url": "https://developer.sangia.org",
+  "theme": {
+    "accent": "#2563eb",
+    "logo": "/public/logo.svg",
+    "favicon": "/public/favicon.ico"
+  },
+  "search": {
+    "enabled": true,
+    "indexContent": true
+  },
+  "rss": {
+    "enabled": true,
+    "title": "Lumera Changelog",
+    "description": "Latest updates across all Lumera projects"
+  },
+  "projects": [
+    { "name": "Wizdam APIs", "path": "wizdam-apis", "repo": "https://github.com/mokesano/wizdam-apis" },
+    { "name": "Wizdam Sikola", "path": "wizdam-sikola", "repo": "https://github.com/mokesano/wizdam-sikola" },
+    { "name": "SDGs Mapper", "path": "sdgs-mapper", "repo": "https://github.com/mokesano/sdgs-mapper" },
+    { "name": "SDGs Analytics", "path": "sdgs-analytics", "repo": "https://github.com/mokesano/SDGs-analytics" },
+    { "name": "Lumera Edge", "path": "lumera-edge", "repo": "https://github.com/mokesano/lumera-edge" }
+  ]
+}
