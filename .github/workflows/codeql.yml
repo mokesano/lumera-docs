@@ -38,13 +38,13 @@ jobs:
       # 1. Checkout repository dengan riwayat penuh (agar semantic-release bisa
       #    melihat commit dan tag sebelumnya)
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       # 2. Setup Node.js (dibutuhkan oleh semantic-release yang berjalan di atas Node)
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 'lts/*'
 
