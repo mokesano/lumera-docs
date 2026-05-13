@@ -1,10 +1,10 @@
 # 📚 Lumera Documentation Hub
 
-[![Chappe](https://img.shields.io/badge/docs-chappe-0077cc?logo=github)](https://github.com/crisp-oss/chappe)
+[![Nextra](https://img.shields.io/badge/docs-nextra-0077cc?logo=github)](https://github.com/shuding/nextra)
 [![License](https://img.shields.io/github/license/mokesano/lumera-docs)](LICENSE)
 [![Status](https://img.shields.io/badge/status-active-brightgreen)](#)
 
-> **Centralized documentation hub** for the Lumera ecosystem — built with [Chappe](https://github.com/crisp-oss/chappe), a modern static documentation builder that produces lightweight, runtime-free assets [[1]].
+> **Centralized documentation hub** for the Lumera ecosystem — built with [Nextra](https://nextra.site), a modern static documentation builder that produces lightweight, runtime-free assets [[1]].
 
 ---
 
@@ -12,7 +12,7 @@
 
 This repository serves as the **single source of truth** for all documentation across the Lumera application suite. It aggregates, organizes, and publishes technical documentation from multiple projects into one unified, searchable interface.
 
-### ✨ Why Chappe?
+### ✨ Why Nextra?
 
 - **Static & Fast**: Generates optimized static assets — no runtime dependencies, just pure HTML/CSS/JS [[19]]
 - **Markdown-First**: Write guides in standard Markdown with rich content support (images, tables, code blocks)
@@ -56,7 +56,7 @@ cd lumera-docs
 npm install
 
 # 2. Start local preview server (with hot-reload)
-npx chappe serve
+npm run dev
 
 # 3. Open in browser
 # → http://localhost:8080
@@ -65,10 +65,10 @@ npx chappe serve
 ### Build for Production
 
 ```bash
-# Generate static assets to ./dist
-npx chappe build
+# Generate static assets to ./out
+npm run build
 
-# Deploy ./dist to your static host:
+# Deploy ./out to your static host:
 # - GitHub Pages, Cloudflare Pages, Netlify, Vercel, or any S3/HTTP server
 ```
 
@@ -91,7 +91,7 @@ lumera-docs/
 │   │   └── ...
 │   └── index.md                # Homepage content
 ├── public/                     # Static assets (images, custom CSS/JS)
-├── chappe.json                 # Chappe configuration
+├── next.config.js                 # Nextra configuration
 ├── package.json
 ├── README.md
 └── .github/workflows/          # CI/CD: auto-build on push
@@ -124,7 +124,7 @@ $sikola = new Sikola(['env' => 'production']);
 $sikola->initialize();
 ```
 
-> 💡 **Tip**: Use `>` blockquotes for callouts. Chappe renders them with distinct styling.
+> 💡 **Tip**: Use `>` blockquotes for callouts. Nextra renders them with distinct styling.
 ```
 
 ### API Reference Example (`data/references/wizdam-apis/v1.apib`)
@@ -169,7 +169,7 @@ date: 2026-05-13
 
 ---
 
-## ⚙️ Configuration (`chappe.json`)
+## ⚙️ Configuration (`next.config.js`)
 
 ```json
 {
@@ -247,15 +247,15 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 18 }
       - run: npm ci
-      - run: npx chappe build
+      - run: npm run build
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./out
 ```
 
 ### Cloudflare Pages / Netlify / Vercel
-Point your static host to the `./dist` directory after `chappe build`. All platforms support automatic deploys on `main` branch push.
+Point your static host to the `./out` directory after `npm run build`. All platforms support automatic deploys on `main` branch push.
 
 ---
 
@@ -264,7 +264,7 @@ Point your static host to the `./dist` directory after `chappe build`. All platf
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feat/add-sikola-guide`
 3. Add/update Markdown files in `data/`
-4. Preview locally: `npx chappe serve`
+4. Preview locally: `npm run dev`
 5. Submit a PR with clear description and screenshots if UI changes
 
 > 📌 **Style Guide**:  
@@ -286,4 +286,4 @@ Individual project documentation may carry their own licenses; refer to each sou
 > 🙏 **Maintained by** [Sangia Publishing House](https://sangia.org) for the **Lumera Frontedge Scholar** ecosystem.  
 > 🌍 Supporting inclusive, multilingual documentation for Global South researchers and developers.
 
-*Built with ❤️ and [Chappe](https://github.com/crisp-oss/chappe) — because great docs shouldn't require a backend.* 🚀
+*Built with ❤️ and [Nextra](https://nextra.site) — because great docs shouldn't require a backend.* 🚀
