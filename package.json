@@ -20,7 +20,7 @@
   "author": "Sangia Publishing House",
   "license": "MIT",
   "dependencies": {
-    "next": "^14.2.0",
+    "next": "^16.2.6",
     "nextra": "^3.0.0",
     "nextra-theme-docs": "^3.0.0",
     "react": "^18.3.0",
