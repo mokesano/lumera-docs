@@ -1,3 +1,5 @@
+import nextra from 'nextra'
+
 /** @type {import('nextra').NextraConfig} */
 const nextraConfig = {
   theme: 'nextra-theme-docs',
@@ -13,7 +15,6 @@ const nextConfig = {
   transpilePackages: ['nextra', 'nextra-theme-docs'],
 };
 
-export default {
-  ...nextraConfig,
-  ...nextConfig,
-};
+const withNextra = nextra(nextraConfig)
+
+export default withNextra(nextConfig);

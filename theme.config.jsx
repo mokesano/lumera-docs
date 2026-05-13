@@ -1,6 +1,4 @@
-import { DocsThemeConfig } from 'nextra-theme-docs'
-
-const config: DocsThemeConfig = {
+const config = {
   logo: <span>Lumera Documentation</span>,
   project: {
     link: 'https://github.com/mokesano/lumera-docs',
