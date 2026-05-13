@@ -1,53 +1,46 @@
-# Lumera Documentation
-
-# Environment
-.env
-.env.local
-.env.*
-
-# Dependencies
-node_modules/
-.venv/
-venv/
-__pycache__/
-.mypy_cache/
-.pytest_cache/
-.julia/
-zig*/
-julia-*/
-
-# Build artifacts
-dist/
-build/
-target/
+```gitignore
+# Compiled and binary files
 *.pyc
 *.class
 *.o
-*.obj
 *.exe
 *.dll
 *.so
 *.a
+*.obj
 *.out
 
-# Logs and temporary files
-*.log
-*.tmp
+# Dependencies and virtual environments
+node_modules/
+venv/
+.venv/
+__pycache__/
+dist/
+build/
+target/
+.gradle/
+.mypy_cache/
+.pytest_cache/
+
+# Editor and IDE files
+.vscode/
+.idea/
 *.swp
 *.swo
+*.tmp
 
-# Coverage reports
+# System and environment files
+.DS_Store
+Thumbs.db
+.env
+.env.local
+*.env.*
+
+# Logs and coverage
+*.log
 coverage/
 htmlcov/
 .coverage
-
-# Editors
-.vscode/
-.idea/
-
-# OS specific
-.DS_Store
-Thumbs.db
 
 # Compressed files
 *.zip
@@ -72,4 +65,4 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
+```

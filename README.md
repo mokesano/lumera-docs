@@ -78,7 +78,7 @@ npm run build
 
 ```
 lumera-docs/
-├── data/
+├── pages/
 │   ├── guides/                 # User guides & tutorials
 │   │   ├── wizdam-sikola/
 │   │   ├── sdgs-mapper/
@@ -101,7 +101,7 @@ lumera-docs/
 
 ## ✍️ Writing Documentation
 
-### Guide Example (`data/guides/wizdam-sikola/getting-started.md`)
+### Guide Example (`pages/guides/wizdam-sikola/getting-started.md`)
 
 ```markdown
 ---
@@ -127,7 +127,7 @@ $sikola->initialize();
 > 💡 **Tip**: Use `>` blockquotes for callouts. Nextra renders them with distinct styling.
 ```
 
-### API Reference Example (`data/references/wizdam-apis/v1.apib`)
+### API Reference Example (`pages/references/wizdam-apis/v1.apib`)
 
 ```apib
 # Group Authentication
@@ -148,7 +148,7 @@ $sikola->initialize();
     }
 ```
 
-### Changelog Entry (`data/changes/wizdam-apis.md`)
+### Changelog Entry (`pages/changes/wizdam-apis.md`)
 
 ```markdown
 ---
@@ -208,8 +208,8 @@ To keep documentation in sync with upstream repositories:
 
 ### Option 1: Git Submodules (Recommended)
 ```bash
-# Add each repo as a submodule under data/
-git submodule add https://github.com/mokesano/wizdam-apis.git data/references/wizdam-apis-src
+# Add each repo as a submodule under pages/
+git submodule add https://github.com/mokesano/wizdam-apis.git pages/references/wizdam-apis-src
 git submodule update --init --recursive
 ```
 
@@ -222,7 +222,7 @@ See `.github/workflows/sync-docs.yml` for automated pulls from source repos on s
 #!/bin/bash
 for repo in wizdam-apis wizdam-sikola sdgs-mapper SDGs-analytics lumera-edge; do
   echo "🔄 Syncing $repo..."
-  git -C "data/references/$repo-src" pull origin main
+  git -C "pages/references/$repo-src" pull origin main
 done
 ```
 
@@ -263,7 +263,7 @@ Point your static host to the `./out` directory after `npm run build`. All platf
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feat/add-sikola-guide`
-3. Add/update Markdown files in `data/`
+3. Add/update Markdown files in `pages/`
 4. Preview locally: `npm run dev`
 5. Submit a PR with clear description and screenshots if UI changes
 
