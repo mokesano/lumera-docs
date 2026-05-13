@@ -4,23 +4,32 @@
   "description": "Centralized documentation hub for the Lumera ecosystem",
   "type": "module",
   "scripts": {
-    "dev": "chappe serve",
-    "build": "chappe build",
-    "preview": "npx serve dist",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "sync": "bash scripts/sync-all.sh"
   },
   "keywords": [
     "documentation",
-    "chappe",
+    "nextra",
+    "nextjs",
     "static-site",
     "lumera",
     "api-docs"
   ],
   "author": "Sangia Publishing House",
   "license": "MIT",
+  "dependencies": {
+    "next": "^14.2.0",
+    "nextra": "^3.0.0",
+    "nextra-theme-docs": "^3.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
   "devDependencies": {
-    "chappe": "^1.0.0",
-    "serve": "^14.2.0"
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
