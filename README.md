@@ -31,7 +31,7 @@ This repository serves as the **single source of truth** for all documentation a
 | [wizdam-apis](https://github.com/mokesano/wizdam-apis) | Core API services & endpoints | `/references/wizdam-apis/` |
 | [wizdam-sikola](https://github.com/mokesano/wizdam-sikola) | Educational platform module | `/guides/wizdam-sikola/` |
 | [sdgs-mapper](https://github.com/mokesano/sdgs-mapper) | SDG mapping & alignment tools | `/guides/sdgs-mapper/` |
-| [SDGs-analytics](https://github.com/mokesano/SDGs-analytics) | Analytics engine for SDG metrics | `/references/sdgs-analytics/` |
+| [sdgs-analytics](https://github.com/mokesano/sdgs-analytics) | Analytics engine for SDG metrics | `/references/sdgs-analytics/` |
 | [lumera-edge](https://github.com/mokesano/lumera-edge) | Edge computing & integration layer | `/guides/lumera-edge/` |
 
 > 💡 **Structure Convention**:  
@@ -194,7 +194,7 @@ date: 2026-05-13
     { "name": "Wizdam APIs", "path": "wizdam-apis", "repo": "https://github.com/mokesano/wizdam-apis" },
     { "name": "Wizdam Sikola", "path": "wizdam-sikola", "repo": "https://github.com/mokesano/wizdam-sikola" },
     { "name": "SDGs Mapper", "path": "sdgs-mapper", "repo": "https://github.com/mokesano/sdgs-mapper" },
-    { "name": "SDGs Analytics", "path": "sdgs-analytics", "repo": "https://github.com/mokesano/SDGs-analytics" },
+    { "name": "SDGs Analytics", "path": "sdgs-analytics", "repo": "https://github.com/mokesano/sdgs-analytics" },
     { "name": "Lumera Edge", "path": "lumera-edge", "repo": "https://github.com/mokesano/lumera-edge" }
   ]
 }
@@ -220,7 +220,7 @@ See `.github/workflows/sync-docs.yml` for automated pulls from source repos on s
 ```bash
 # scripts/sync-all.sh
 #!/bin/bash
-for repo in wizdam-apis wizdam-sikola sdgs-mapper SDGs-analytics lumera-edge; do
+for repo in wizdam-apis wizdam-sikola sdgs-mapper sdgs-analytics lumera-edge; do
   echo "🔄 Syncing $repo..."
   git -C "data/references/$repo-src" pull origin main
 done
