@@ -17,7 +17,7 @@ REPOS=(
 )
 
 # Base directory for documentation
-DOC_BASE="data"
+DOC_BASE="pages"
 
 for repo in "${REPOS[@]}"; do
     echo "📦 Syncing $repo..."
@@ -57,6 +57,6 @@ done
 echo "✅ Sync complete!"
 echo ""
 echo "Next steps:"
-echo "1. Review changes in the data/ directory"
+echo "1. Review changes in the pages/ directory"
 echo "2. Run 'npm run dev' to preview locally"
 echo "3. Commit and push changes when ready"
