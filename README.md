@@ -28,9 +28,9 @@ This repository serves as the **single source of truth** for all documentation a
 
 | Repository | Description | Documentation Path |
 |------------|-------------|-------------------|
-| [wizdam-apis](https://github.com/mokesano/sangia-apis) | Core API services & endpoints | `/references/sangia-apis/` |
-| [wizdam-sikola](https://github.com/mokesano/sangia-scieco) | Educational platform module | `/guides/sangia-scieco/` |
-| [sdgs-mapper](https://github.com/mokesano/sciecola) | SDG mapping & alignment tools | `/guides/sciecola/` |
+| [sangia-apis](https://github.com/mokesano/sangia-apis) | Core API services & endpoints | `/references/sangia-apis/` |
+| [sangia-scieco](https://github.com/mokesano/sangia-scieco) | Educational platform module | `/guides/sangia-scieco/` |
+| [sciecola](https://github.com/mokesano/sciecola) | SDG mapping & alignment tools | `/guides/sciecola/` |
 | [SDGs-analytics](https://github.com/mokesano/SDGs-analytics) | Analytics engine for SDG metrics | `/references/sdgs-analytics/` |
 | [lumera-edge](https://github.com/mokesano/lumera-edge) | Edge computing & integration layer | `/guides/lumera-edge/` |
 
