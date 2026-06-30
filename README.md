@@ -28,9 +28,9 @@ This repository serves as the **single source of truth** for all documentation a
 
 | Repository | Description | Documentation Path |
 |------------|-------------|-------------------|
-| [wizdam-apis](https://github.com/mokesano/wizdam-apis) | Core API services & endpoints | `/references/wizdam-apis/` |
-| [wizdam-sikola](https://github.com/mokesano/wizdam-sikola) | Educational platform module | `/guides/wizdam-sikola/` |
-| [sdgs-mapper](https://github.com/mokesano/sdgs-mapper) | SDG mapping & alignment tools | `/guides/sdgs-mapper/` |
+| [wizdam-apis](https://github.com/mokesano/sangia-apis) | Core API services & endpoints | `/references/sangia-apis/` |
+| [wizdam-sikola](https://github.com/mokesano/sangia-scieco) | Educational platform module | `/guides/sangia-scieco/` |
+| [sdgs-mapper](https://github.com/mokesano/sciecola) | SDG mapping & alignment tools | `/guides/sciecola/` |
 | [SDGs-analytics](https://github.com/mokesano/SDGs-analytics) | Analytics engine for SDG metrics | `/references/sdgs-analytics/` |
 | [lumera-edge](https://github.com/mokesano/lumera-edge) | Edge computing & integration layer | `/guides/lumera-edge/` |
 
@@ -80,14 +80,14 @@ npm run build
 lumera-docs/
 ├── pages/
 │   ├── guides/                 # User guides & tutorials
-│   │   ├── wizdam-sikola/
-│   │   ├── sdgs-mapper/
+│   │   ├── sangia-scieco/
+│   │   ├── sciecola/
 │   │   └── lumera-edge/
 │   ├── references/             # API & technical references
-│   │   ├── wizdam-apis/
+│   │   ├── sangia-apis/
 │   │   └── sdgs-analytics/
 │   ├── changes/                # Changelogs (auto-RSS)
-│   │   ├── wizdam-apis.md
+│   │   ├── sangia-apis.md
 │   │   └── ...
 │   └── index.md                # Homepage content
 ├── public/                     # Static assets (images, custom CSS/JS)
@@ -101,7 +101,7 @@ lumera-docs/
 
 ## ✍️ Writing Documentation
 
-### Guide Example (`pages/guides/wizdam-sikola/getting-started.md`)
+### Guide Example (`pages/guides/sangia-scieco/getting-started.md`)
 
 ```markdown
 ---
@@ -113,7 +113,7 @@ order: 1
 ## Installation
 
 ```bash
-npm install @wizdam/sikola
+npm install @sangia/scieco
 ```
 
 ## Basic Usage
@@ -127,7 +127,7 @@ $sikola->initialize();
 > 💡 **Tip**: Use `>` blockquotes for callouts. Nextra renders them with distinct styling.
 ```
 
-### API Reference Example (`pages/references/wizdam-apis/v1.apib`)
+### API Reference Example (`pages/references/sangia-apis/v1.apib`)
 
 ```apib
 # Group Authentication
@@ -191,9 +191,9 @@ date: 2026-05-13
     "description": "Latest updates across all Lumera projects"
   },
   "projects": [
-    { "name": "Wizdam APIs", "path": "wizdam-apis", "repo": "https://github.com/mokesano/wizdam-apis" },
-    { "name": "Wizdam Sikola", "path": "wizdam-sikola", "repo": "https://github.com/mokesano/wizdam-sikola" },
-    { "name": "SDGs Mapper", "path": "sdgs-mapper", "repo": "https://github.com/mokesano/sdgs-mapper" },
+    { "name": "Sangia APIs", "path": "sangia-apis", "repo": "https://github.com/mokesano/sangia-apis" },
+    { "name": "Sangia scieco", "path": "sangia-sciec", "repo": "https://github.com/mokesano/sangia-scieco" },
+    { "name": "Sciecola", "path": "sciecola", "repo": "https://github.com/mokesano/sciecola" },
     { "name": "SDGs Analytics", "path": "sdgs-analytics", "repo": "https://github.com/mokesano/SDGs-analytics" },
     { "name": "Lumera Edge", "path": "lumera-edge", "repo": "https://github.com/mokesano/lumera-edge" }
   ]
@@ -262,7 +262,7 @@ Point your static host to the `./out` directory after `npm run build`. All platf
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feat/add-sikola-guide`
+2. Create a feature branch: `git checkout -b feat/add-lumera-docs`
 3. Add/update Markdown files in `pages/`
 4. Preview locally: `npm run dev`
 5. Submit a PR with clear description and screenshots if UI changes
